@@ -4,6 +4,7 @@ import cors from "cors";
 import Brewery from './model/Brewery';
 import { GetAllBreweries } from "./services/breweryservices";
 const app:Application = express();
+
 app.use(cors());
 app.use(express.json());
 // Define your endpoint and specify the HTTP method
