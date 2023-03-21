@@ -620,3 +620,162 @@ Issues? Report them at https://github.com/firebase/firebase-tools/issues and att
 [debug] [2023-03-21T00:19:53.475Z] File C:\Grand_Circus\WhatsHopBackEnd\functions\src\services\breweryservices.ts changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Grand_Circus\\WhatsHopBackEnd\\functions\\src\\services\\breweryservices.ts changed, reloading triggers"}}
 [debug] [2023-03-21T00:19:53.475Z] File C:\Grand_Circus\WhatsHopBackEnd\functions\src\index.ts changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Grand_Circus\\WhatsHopBackEnd\\functions\\src\\index.ts changed, reloading triggers"}}
 [debug] [2023-03-21T00:19:53.487Z] File C:\Grand_Circus\WhatsHopBackEnd\functions\package.json changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Grand_Circus\\WhatsHopBackEnd\\functions\\package.json changed, reloading triggers"}}
+[debug] [2023-03-21T00:19:54.497Z] Validating nodejs source
+[debug] [2023-03-21T00:19:57.885Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log",
+    "serve:dev": "concurrently \"tsc --watch\" \"firebase emulators:start --only functions\""
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.17",
+    "axios": "^1.3.4",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.5.0",
+    "firebase-functions": "^4.2.0",
+    "mongodb": "^5.1.0"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0",
+    "firebase-functions-test": "^3.0.0",
+    "typescript": "^4.9.0"
+  },
+  "private": true
+}
+[debug] [2023-03-21T00:19:57.885Z] Building nodejs source
+[debug] [2023-03-21T00:19:57.886Z] Failed to find version of module node: reached end of search path C:\Grand_Circus\WhatsHopBackEnd\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-03-21T00:19:57.896Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-03-21T00:19:57.913Z] Found firebase-functions binary at 'C:\Grand_Circus\WhatsHopBackEnd\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-03-21T00:19:57.967Z] File C:\Grand_Circus\WhatsHopBackEnd\functions\lib\services\breweryservices.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Grand_Circus\\WhatsHopBackEnd\\functions\\lib\\services\\breweryservices.js.map changed, reloading triggers"}}
+[debug] [2023-03-21T00:19:57.967Z] File C:\Grand_Circus\WhatsHopBackEnd\functions\lib\index.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Grand_Circus\\WhatsHopBackEnd\\functions\\lib\\index.js.map changed, reloading triggers"}}
+[debug] [2023-03-21T00:19:58.060Z] File C:\Grand_Circus\WhatsHopBackEnd\functions\lib\services\breweryservices.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Grand_Circus\\WhatsHopBackEnd\\functions\\lib\\services\\breweryservices.js changed, reloading triggers"}}
+[debug] [2023-03-21T00:19:58.060Z] File C:\Grand_Circus\WhatsHopBackEnd\functions\lib\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Grand_Circus\\WhatsHopBackEnd\\functions\\lib\\index.js changed, reloading triggers"}}
+[debug] [2023-03-21T00:19:58.683Z] Serving at port 8514
+
+[debug] [2023-03-21T00:19:59.076Z] Validating nodejs source
+[debug] [2023-03-21T00:20:01.589Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log",
+    "serve:dev": "concurrently \"tsc --watch\" \"firebase emulators:start --only functions\""
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.17",
+    "axios": "^1.3.4",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.5.0",
+    "firebase-functions": "^4.2.0",
+    "mongodb": "^5.1.0"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0",
+    "firebase-functions-test": "^3.0.0",
+    "typescript": "^4.9.0"
+  },
+  "private": true
+}
+[debug] [2023-03-21T00:20:01.589Z] Building nodejs source
+[debug] [2023-03-21T00:20:01.589Z] Failed to find version of module node: reached end of search path C:\Grand_Circus\WhatsHopBackEnd\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-03-21T00:20:01.590Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-03-21T00:20:01.598Z] Found firebase-functions binary at 'C:\Grand_Circus\WhatsHopBackEnd\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-03-21T00:20:01.608Z] Got response from /__/functions.yaml {"endpoints":{"getBreweries":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"getBreweries"},"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-03-21T00:20:01.679Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: getBreweries, api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: getBreweries, api."}}
+[debug] [2023-03-21T00:20:01.686Z] [worker-pool] Shutting down IDLE worker (us-central1-getBreweries) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-getBreweries)"}}
+[debug] [2023-03-21T00:20:01.687Z] [worker-us-central1-getBreweries-16589f46-28a8-407a-b06e-b4389a78e059]: FINISHING {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getBreweries"},"extension":{},"message":"[worker-us-central1-getBreweries-16589f46-28a8-407a-b06e-b4389a78e059]: FINISHING"}}
+[debug] [2023-03-21T00:20:01.705Z] [worker-us-central1-getBreweries-16589f46-28a8-407a-b06e-b4389a78e059]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getBreweries"},"extension":{},"message":"[worker-us-central1-getBreweries-16589f46-28a8-407a-b06e-b4389a78e059]: exited"}}
+[debug] [2023-03-21T00:20:01.705Z] [worker-us-central1-getBreweries-16589f46-28a8-407a-b06e-b4389a78e059]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getBreweries"},"extension":{},"message":"[worker-us-central1-getBreweries-16589f46-28a8-407a-b06e-b4389a78e059]: FINISHED"}}
+[debug] [2023-03-21T00:20:01.982Z] Serving at port 8508
+
+[debug] [2023-03-21T00:20:02.438Z] Got response from /__/functions.yaml {"endpoints":{"getBreweries":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"getBreweries"},"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-03-21T00:20:02.452Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: getBreweries, api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: getBreweries, api."}}
+[debug] [2023-03-21T01:31:05.800Z] [work-queue] {"queuedWork":["/whatshop-b56f0/us-central1/getBreweries/breweries-2023-03-21T01:31:05.794Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-03-21T01:31:05.825Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/whatshop-b56f0/us-central1/getBreweries/breweries-2023-03-21T01:31:05.794Z"],"workRunningCount":1}
+[debug] [2023-03-21T01:31:05.827Z] Accepted request GET /whatshop-b56f0/us-central1/getBreweries/breweries --> us-central1-getBreweries
+[debug] [2023-03-21T01:31:05.879Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-03-21T01:31:05.884Z] [functions] Got req.url=/whatshop-b56f0/us-central1/getBreweries/breweries, mapping to path=/breweries {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/whatshop-b56f0/us-central1/getBreweries/breweries, mapping to path=/breweries"}}
+[debug] [2023-03-21T01:31:05.886Z] [worker-pool] Cleaned up workers for us-central1-getBreweries: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-getBreweries: 1 --> 0"}}
+[debug] [2023-03-21T01:31:05.962Z] [worker-pool] addWorker(us-central1-getBreweries) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-getBreweries)"}}
+[debug] [2023-03-21T01:31:05.968Z] [worker-pool] Adding worker with key us-central1-getBreweries, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-getBreweries, total=1"}}
+[debug] [2023-03-21T01:31:10.188Z] [runtime-status] [19296] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.5.0","resolution":"C:\\Grand_Circus\\WhatsHopBackEnd\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getBreweries"},"extension":{},"message":"[runtime-status] [19296] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.5.0\",\"resolution\":\"C:\\\\Grand_Circus\\\\WhatsHopBackEnd\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2023-03-21T01:31:10.192Z] [runtime-status] [19296] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.2.1","resolution":"C:\\Grand_Circus\\WhatsHopBackEnd\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getBreweries"},"extension":{},"message":"[runtime-status] [19296] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.2.1\",\"resolution\":\"C:\\\\Grand_Circus\\\\WhatsHopBackEnd\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-03-21T01:31:10.194Z] [runtime-status] [19296] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getBreweries"},"extension":{},"message":"[runtime-status] [19296] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2023-03-21T01:31:10.195Z] [runtime-status] [19296] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.2.1","resolution":"C:\\Grand_Circus\\WhatsHopBackEnd\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getBreweries"},"extension":{},"message":"[runtime-status] [19296] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.2.1\",\"resolution\":\"C:\\\\Grand_Circus\\\\WhatsHopBackEnd\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-03-21T01:31:11.267Z] [runtime-status] [19296] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getBreweries"},"extension":{},"message":"[runtime-status] [19296] Checked functions.config() {\"config\":{}}"}}
+[debug] [2023-03-21T01:31:11.268Z] [runtime-status] [19296] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.2.1","resolution":"C:\\Grand_Circus\\WhatsHopBackEnd\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getBreweries"},"extension":{},"message":"[runtime-status] [19296] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.2.1\",\"resolution\":\"C:\\\\Grand_Circus\\\\WhatsHopBackEnd\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}}"}}
+[debug] [2023-03-21T01:31:11.272Z] [runtime-status] [19296] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.2.1","resolution":"C:\\Grand_Circus\\WhatsHopBackEnd\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getBreweries"},"extension":{},"message":"[runtime-status] [19296] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.2.1\",\"resolution\":\"C:\\\\Grand_Circus\\\\WhatsHopBackEnd\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-03-21T01:31:11.280Z] [runtime-status] [19296] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.5.0","resolution":"C:\\Grand_Circus\\WhatsHopBackEnd\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getBreweries"},"extension":{},"message":"[runtime-status] [19296] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.5.0\",\"resolution\":\"C:\\\\Grand_Circus\\\\WhatsHopBackEnd\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2023-03-21T01:31:11.289Z] [runtime-status] [19296] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.2.1","resolution":"C:\\Grand_Circus\\WhatsHopBackEnd\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getBreweries"},"extension":{},"message":"[runtime-status] [19296] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.2.1\",\"resolution\":\"C:\\\\Grand_Circus\\\\WhatsHopBackEnd\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-03-21T01:31:11.290Z] [runtime-status] [19296] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.5.0","resolution":"C:\\Grand_Circus\\WhatsHopBackEnd\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getBreweries"},"extension":{},"message":"[runtime-status] [19296] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.5.0\",\"resolution\":\"C:\\\\Grand_Circus\\\\WhatsHopBackEnd\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2023-03-21T01:31:12.351Z] [runtime-status] [19296] Functions runtime initialized. {"cwd":"C:\\Grand_Circus\\WhatsHopBackEnd\\functions","node_version":"16.18.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getBreweries"},"extension":{},"message":"[runtime-status] [19296] Functions runtime initialized. {\"cwd\":\"C:\\\\Grand_Circus\\\\WhatsHopBackEnd\\\\functions\",\"node_version\":\"16.18.0\"}"}}
+[debug] [2023-03-21T01:31:12.353Z] [runtime-status] [19296] Listening to port: \\?\pipe\fire_emu_4255b3d40c9b74b0 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getBreweries"},"extension":{},"message":"[runtime-status] [19296] Listening to port: \\\\?\\pipe\\fire_emu_4255b3d40c9b74b0"}}
+[debug] [2023-03-21T01:31:12.506Z] [worker-us-central1-getBreweries-fd594b6d-a65f-46d4-8bec-23ce3d81cf55]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getBreweries"},"extension":{},"message":"[worker-us-central1-getBreweries-fd594b6d-a65f-46d4-8bec-23ce3d81cf55]: IDLE"}}
+[debug] [2023-03-21T01:31:12.507Z] [worker-pool] submitRequest(triggerId=us-central1-getBreweries) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-getBreweries)"}}
+[info] i  functions: Beginning execution of "us-central1-getBreweries" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getBreweries"},"extension":{},"message":"Beginning execution of \"us-central1-getBreweries\""}}
+[debug] [2023-03-21T01:31:12.508Z] [worker-us-central1-getBreweries-fd594b6d-a65f-46d4-8bec-23ce3d81cf55]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getBreweries"},"extension":{},"message":"[worker-us-central1-getBreweries-fd594b6d-a65f-46d4-8bec-23ce3d81cf55]: BUSY"}}
+[debug] [2023-03-21T01:31:41.781Z] [work-queue] {"queuedWork":["/whatshop-b56f0/us-central1/getBreweries/breweries-2023-03-21T01:31:41.781Z"],"queueLength":1,"runningWork":["/whatshop-b56f0/us-central1/getBreweries/breweries-2023-03-21T01:31:05.794Z"],"workRunningCount":1}
+[debug] [2023-03-21T01:31:41.782Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/whatshop-b56f0/us-central1/getBreweries/breweries-2023-03-21T01:31:05.794Z","/whatshop-b56f0/us-central1/getBreweries/breweries-2023-03-21T01:31:41.781Z"],"workRunningCount":2}
+[debug] [2023-03-21T01:31:41.782Z] Accepted request GET /whatshop-b56f0/us-central1/getBreweries/breweries --> us-central1-getBreweries
+[debug] [2023-03-21T01:31:41.796Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-03-21T01:31:41.798Z] [functions] Got req.url=/whatshop-b56f0/us-central1/getBreweries/breweries, mapping to path=/breweries {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/whatshop-b56f0/us-central1/getBreweries/breweries, mapping to path=/breweries"}}
+[debug] [2023-03-21T01:31:41.821Z] [worker-pool] addWorker(us-central1-getBreweries) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-getBreweries)"}}
+[debug] [2023-03-21T01:31:41.822Z] [worker-pool] Adding worker with key us-central1-getBreweries, total=2 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-getBreweries, total=2"}}
+[debug] [2023-03-21T01:31:45.430Z] [runtime-status] [14152] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.5.0","resolution":"C:\\Grand_Circus\\WhatsHopBackEnd\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getBreweries"},"extension":{},"message":"[runtime-status] [14152] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.5.0\",\"resolution\":\"C:\\\\Grand_Circus\\\\WhatsHopBackEnd\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2023-03-21T01:31:45.434Z] [runtime-status] [14152] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.2.1","resolution":"C:\\Grand_Circus\\WhatsHopBackEnd\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getBreweries"},"extension":{},"message":"[runtime-status] [14152] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.2.1\",\"resolution\":\"C:\\\\Grand_Circus\\\\WhatsHopBackEnd\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-03-21T01:31:45.434Z] [runtime-status] [14152] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getBreweries"},"extension":{},"message":"[runtime-status] [14152] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2023-03-21T01:31:45.437Z] [runtime-status] [14152] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.2.1","resolution":"C:\\Grand_Circus\\WhatsHopBackEnd\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getBreweries"},"extension":{},"message":"[runtime-status] [14152] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.2.1\",\"resolution\":\"C:\\\\Grand_Circus\\\\WhatsHopBackEnd\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-03-21T01:31:46.105Z] [runtime-status] [14152] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getBreweries"},"extension":{},"message":"[runtime-status] [14152] Checked functions.config() {\"config\":{}}"}}
+[debug] [2023-03-21T01:31:46.105Z] [runtime-status] [14152] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.2.1","resolution":"C:\\Grand_Circus\\WhatsHopBackEnd\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getBreweries"},"extension":{},"message":"[runtime-status] [14152] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.2.1\",\"resolution\":\"C:\\\\Grand_Circus\\\\WhatsHopBackEnd\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}}"}}
+[debug] [2023-03-21T01:31:46.107Z] [runtime-status] [14152] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.2.1","resolution":"C:\\Grand_Circus\\WhatsHopBackEnd\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getBreweries"},"extension":{},"message":"[runtime-status] [14152] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.2.1\",\"resolution\":\"C:\\\\Grand_Circus\\\\WhatsHopBackEnd\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-03-21T01:31:46.109Z] [runtime-status] [14152] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.5.0","resolution":"C:\\Grand_Circus\\WhatsHopBackEnd\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getBreweries"},"extension":{},"message":"[runtime-status] [14152] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.5.0\",\"resolution\":\"C:\\\\Grand_Circus\\\\WhatsHopBackEnd\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2023-03-21T01:31:46.122Z] [runtime-status] [14152] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.2.1","resolution":"C:\\Grand_Circus\\WhatsHopBackEnd\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getBreweries"},"extension":{},"message":"[runtime-status] [14152] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.2.1\",\"resolution\":\"C:\\\\Grand_Circus\\\\WhatsHopBackEnd\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-03-21T01:31:46.123Z] [runtime-status] [14152] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.5.0","resolution":"C:\\Grand_Circus\\WhatsHopBackEnd\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getBreweries"},"extension":{},"message":"[runtime-status] [14152] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.5.0\",\"resolution\":\"C:\\\\Grand_Circus\\\\WhatsHopBackEnd\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2023-03-21T01:31:46.545Z] [runtime-status] [14152] Functions runtime initialized. {"cwd":"C:\\Grand_Circus\\WhatsHopBackEnd\\functions","node_version":"16.18.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getBreweries"},"extension":{},"message":"[runtime-status] [14152] Functions runtime initialized. {\"cwd\":\"C:\\\\Grand_Circus\\\\WhatsHopBackEnd\\\\functions\",\"node_version\":\"16.18.0\"}"}}
+[debug] [2023-03-21T01:31:46.546Z] [runtime-status] [14152] Listening to port: \\?\pipe\fire_emu_6b7c7319ac851071 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getBreweries"},"extension":{},"message":"[runtime-status] [14152] Listening to port: \\\\?\\pipe\\fire_emu_6b7c7319ac851071"}}
+[debug] [2023-03-21T01:31:46.615Z] [worker-us-central1-getBreweries-e49ce4b8-ce2c-4739-b6f9-f399e20144a8]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getBreweries"},"extension":{},"message":"[worker-us-central1-getBreweries-e49ce4b8-ce2c-4739-b6f9-f399e20144a8]: IDLE"}}
+[debug] [2023-03-21T01:31:46.615Z] [worker-pool] submitRequest(triggerId=us-central1-getBreweries) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-getBreweries)"}}
+[info] i  functions: Beginning execution of "us-central1-getBreweries" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getBreweries"},"extension":{},"message":"Beginning execution of \"us-central1-getBreweries\""}}
+[debug] [2023-03-21T01:31:46.616Z] [worker-us-central1-getBreweries-e49ce4b8-ce2c-4739-b6f9-f399e20144a8]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getBreweries"},"extension":{},"message":"[worker-us-central1-getBreweries-e49ce4b8-ce2c-4739-b6f9-f399e20144a8]: BUSY"}}
+[info] i  functions: Finished "us-central1-getBreweries" in 237.5813ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getBreweries"},"extension":{},"message":"Finished \"us-central1-getBreweries\" in 237.5813ms"}}
+[debug] [2023-03-21T01:31:46.854Z] [worker-us-central1-getBreweries-e49ce4b8-ce2c-4739-b6f9-f399e20144a8]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getBreweries"},"extension":{},"message":"[worker-us-central1-getBreweries-e49ce4b8-ce2c-4739-b6f9-f399e20144a8]: IDLE"}}
+[debug] [2023-03-21T01:31:46.858Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/whatshop-b56f0/us-central1/getBreweries/breweries-2023-03-21T01:31:05.794Z"],"workRunningCount":1}
+[debug] [2023-03-21T01:31:46.860Z] [work-queue] {"queuedWork":["/whatshop-b56f0/us-central1/getBreweries/breweries-2023-03-21T01:31:46.859Z"],"queueLength":1,"runningWork":["/whatshop-b56f0/us-central1/getBreweries/breweries-2023-03-21T01:31:05.794Z"],"workRunningCount":1}
+[debug] [2023-03-21T01:31:46.860Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/whatshop-b56f0/us-central1/getBreweries/breweries-2023-03-21T01:31:05.794Z","/whatshop-b56f0/us-central1/getBreweries/breweries-2023-03-21T01:31:46.859Z"],"workRunningCount":2}
+[debug] [2023-03-21T01:31:46.861Z] Accepted request GET /whatshop-b56f0/us-central1/getBreweries/breweries --> us-central1-getBreweries
+[debug] [2023-03-21T01:31:46.868Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-03-21T01:31:46.870Z] [functions] Got req.url=/whatshop-b56f0/us-central1/getBreweries/breweries, mapping to path=/breweries {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/whatshop-b56f0/us-central1/getBreweries/breweries, mapping to path=/breweries"}}
+[debug] [2023-03-21T01:31:46.870Z] [worker-pool] submitRequest(triggerId=us-central1-getBreweries) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-getBreweries)"}}
+[info] i  functions: Beginning execution of "us-central1-getBreweries" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getBreweries"},"extension":{},"message":"Beginning execution of \"us-central1-getBreweries\""}}
+[debug] [2023-03-21T01:31:46.871Z] [worker-us-central1-getBreweries-e49ce4b8-ce2c-4739-b6f9-f399e20144a8]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getBreweries"},"extension":{},"message":"[worker-us-central1-getBreweries-e49ce4b8-ce2c-4739-b6f9-f399e20144a8]: BUSY"}}
+[info] i  functions: Finished "us-central1-getBreweries" in 118.365ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getBreweries"},"extension":{},"message":"Finished \"us-central1-getBreweries\" in 118.365ms"}}
+[debug] [2023-03-21T01:31:46.992Z] [worker-us-central1-getBreweries-e49ce4b8-ce2c-4739-b6f9-f399e20144a8]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-getBreweries"},"extension":{},"message":"[worker-us-central1-getBreweries-e49ce4b8-ce2c-4739-b6f9-f399e20144a8]: IDLE"}}
+[debug] [2023-03-21T01:31:46.992Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/whatshop-b56f0/us-central1/getBreweries/breweries-2023-03-21T01:31:05.794Z"],"workRunningCount":1}
