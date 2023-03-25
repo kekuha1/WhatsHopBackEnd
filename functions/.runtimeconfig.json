@@ -1,0 +1,5 @@
+{
+  "mongodb": {
+    "uri": "mongodb+srv://kekuha1:Godsmack1!@jacksonssupervisor.ixvv20s.mongodb.net/breweries_users?retryWrites=true&w=majority"
+  }
+}

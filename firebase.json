@@ -2,11 +2,8 @@
   "functions": [
     {
       "source": "functions",
-      "codebase": "default"
-    },
-    {
-      "source": "whatshop",
-      "codebase": "whatshop",
+      "codebase": "default",
+   
       "ignore": [
         "node_modules",
         ".git",
