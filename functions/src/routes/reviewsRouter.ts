@@ -1,4 +1,4 @@
-import express from "express";
+import express, {Request, Response} from "express";
 import { getClient } from "../db";
 import { ObjectId } from "mongodb";
 import Review from "../model/Review";
@@ -28,19 +28,14 @@ reviewsRouter.get("/", async (req, res) => {
   }
 });
 
-reviewsRouter.get("/:id", async (req, res) => {
-  try {
-    let id: string = req.params.id as string;
+reviewsRouter.get('/:breweryId', async (req:Request, res:Response) => {
+    try {
+    const breweryId = req.params.brewery_id;
     const client = await getClient();
-    const results = client
-      .db("breweries_users")
-      .collection<Review>("reviews")
-      .find({ _id: new ObjectId(id) });
-    if (results) {
+    const results = await client.db("breweries_users").collection<Review>('reviews').find({ brewery_id: breweryId }).toArray();
+
       res.status(200).json(results);
-    } else {
-      res.status(404).json({ message: "ID not Found" });
-    }
+    
   } catch (err) {
     errorResponse(err, res);
   }
@@ -49,7 +44,7 @@ reviewsRouter.get("/:id", async (req, res) => {
 reviewsRouter.post("/", async (req, res) => {
   try {
     const client = await getClient();
-    const newItem = req.body;
+    const newItem = req.body as Review;
     client
       .db("breweries_users")
       .collection<Review>("reviews")
