@@ -9,7 +9,7 @@ const errorResponse = (error: any, res: any) => {
   console.error('FAIL', error);
   res.status(500).json({ message: 'Internal Server Error' });
 };
-breweriesRouter.get('/breweries', async (req, res) => {
+breweriesRouter.get('/', async (req, res) => {
   try {
      const client = await getClient();
      const cursor = client.db().collection<Brewery[]>('breweries').find();
@@ -20,7 +20,7 @@ breweriesRouter.get('/breweries', async (req, res) => {
   }
 });
 
-breweriesRouter.get('/breweries/:id', async (req, res) => {
+breweriesRouter.get('/:id', async (req, res) => {
   try {
 let id:string = req.params.id as string;
      const client = await getClient();
@@ -35,7 +35,7 @@ res.status(404).json({message: 'ID not Found'});
   }
 });
 
-breweriesRouter.post('/breweries', async (req, res) => {
+breweriesRouter.post('/', async (req, res) => {
   try {
      const client = await getClient();
      const newItem = req.body
@@ -47,7 +47,7 @@ breweriesRouter.post('/breweries', async (req, res) => {
   }
 });
 
-breweriesRouter.put('/breweries/:id', async (req, res) => {
+breweriesRouter.put('/:id', async (req, res) => {
   try {
 let id: string = req.params.id as string;
 const replacement = req.body;
@@ -66,7 +66,7 @@ if (result.modifiedCount) {
   }
 });
 
-breweriesRouter.patch('/breweries/:id', async (req, res) => {
+breweriesRouter.patch('/:id', async (req, res) => {
   try {
 let id: string = req.params.id as string;
 const update = req.body;
@@ -84,7 +84,7 @@ if (result.modifiedCount) {
   }
 });
 
-breweriesRouter.delete('/breweries/:id', async (req, res) => {
+breweriesRouter.delete('/:id', async (req, res) => {
   try {
 let id: string = req.params.id as string;
 const client = await getClient();

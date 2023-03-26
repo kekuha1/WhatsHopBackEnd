@@ -8,7 +8,7 @@ const errorResponse = (error: any, res: any) => {
   console.error("FAIL", error);
   res.status(500).json({ message: "Internal Server Error" });
 };
-userRouter.get("/users", async (req, res) => {
+userRouter.get("/user", async (req, res) => {
   try {
     const client = await getClient();
     const cursor = client.db().collection<any[]>("profiles").find();
