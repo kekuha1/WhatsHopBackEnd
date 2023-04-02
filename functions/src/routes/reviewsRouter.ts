@@ -29,17 +29,18 @@ reviewsRouter.get("/", async (req, res) => {
 });
 
 reviewsRouter.get('/:breweryId', async (req:Request, res:Response) => {
-    try {
-    const breweryId = req.params.brewery_id;
+  try {
+    const breweryId = req.params.breweryId; 
     const client = await getClient();
     const results = await client.db("breweries_users").collection<Review>('reviews').find({ brewery_id: breweryId }).toArray();
 
-      res.status(200).json(results);
+    res.status(200).json(results);
     
   } catch (err) {
     errorResponse(err, res);
   }
 });
+
 
 reviewsRouter.post("/", async (req, res) => {
   try {
