@@ -11,12 +11,13 @@ const errorResponse = (error: any, res: any) => {
 };
 userRouter.get("/:uid", async (req, res) => {
   try {
+    const uid = req.params.uid
     const client = await getClient();
-    const cursor = client.db("breweries_users").collection<Favorites>("users").find();
+    const cursor = client.db("breweries_users").collection<Favorites>("users").find({uid: uid});
     const results = await cursor.toArray();
-    results
-      ? res.status(200).json(results)
-      : res.status(404).json({ message: "Not found" });
+    
+      res.status(200).json(results);
+      
   } catch (err) {
     errorResponse(err, res);
   }
@@ -25,11 +26,13 @@ userRouter.get("/:uid", async (req, res) => {
   userRouter.post("/", async (req, res) => {
     try {
       const client = await getClient();
-      const cursor = client.db("breweries_users").collection<Favorites>("users").find();
-      const results = await cursor.toArray();
-      results
-      ? res.status(200).json(results)
-      : res.status(404).json({ message: "Not found" });
+      const newItem = req.body as Favorites
+      client
+      .db("breweries_users")
+      .collection<Favorites>("users")
+      .insertOne(newItem)
+      res.status(200)
+      res.json(newItem)
     } catch (err) {
       errorResponse(err, res);
     }
