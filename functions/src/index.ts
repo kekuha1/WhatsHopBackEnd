@@ -4,6 +4,7 @@ import cors from "cors";
 import userRouter from "./routes/userRouter";
 import reviewsRouter from "./routes/reviewsRouter";
 import breweriesRouter from "./routes/breweriesRouter";
+import googleplacesrouter from "./routes/googleplacesrouter";
 
 const app: Application = express();
 
@@ -13,5 +14,6 @@ app.use(express.json());
 app.use("/user", userRouter);
 app.use("/review", reviewsRouter);
 app.use("/breweries", breweriesRouter);
+app.use("/google-places", googleplacesrouter);
 
 export const api = functions.https.onRequest(app);
