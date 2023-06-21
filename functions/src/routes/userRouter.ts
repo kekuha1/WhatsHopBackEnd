@@ -1,6 +1,7 @@
 import express from "express";
 import { getClient } from "../db";
 import Favorites from "../model/Favorites";
+import { ObjectId } from "mongodb";
 
 
 const userRouter = express.Router();
@@ -37,5 +38,20 @@ userRouter.get("/:uid", async (req, res) => {
       errorResponse(err, res);
     }
   });
+
+  userRouter.delete("/:id", async (req, res) => {
+  try {
+    const id = new ObjectId(req.params.id);
+    const client = await getClient();
+    const result = await client
+      .db("breweries_users")
+      .collection<Favorites>("users")
+      .deleteOne({_id: id});
+    res.status(200).json(result);
+  } catch (err) {
+    errorResponse(err, res);
+  }
+});
+
 
 export default userRouter;
